@@ -147,6 +147,6 @@ Agregar aquí las capturas de pantalla de:
 - Pantalla de información.
 - Navegación entre pantallas.
 - Sistema de favoritos.
-- SnackBar.
+
 
 
