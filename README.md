@@ -1,4 +1,4 @@
-# ⚽ Equipo de Fútbol favorito de Joseph Aguirre
+# ⚽ Equipo de Fútbol favorito de Joseph Aguirre Moreira
 
 Aplicación desarrollada en Flutter para presentar información de un equipo de fútbol mediante diferentes pantallas, navegación, widgets, interacción y personalización.
 
