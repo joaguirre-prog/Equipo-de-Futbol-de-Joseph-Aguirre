@@ -6,7 +6,7 @@ Aplicación desarrollada en Flutter para presentar información de un equipo de 
 
 **Joseph Aguirre**
 
-## 🎯 Actividad Integradora 1
+## 🎯 Actividad Integradora I
 
 La primera versión de la aplicación fue una aplicación básica en Flutter sobre un equipo de fútbol, utilizando MaterialApp, Scaffold, AppBar, textos, iconos, Container, Column y una interacción mediante botón.
 
