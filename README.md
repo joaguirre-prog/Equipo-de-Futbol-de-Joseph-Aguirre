@@ -4,7 +4,7 @@ Aplicación desarrollada en Flutter para presentar información de un equipo de 
 
 ## 👤 Autor
 
-**Joseph Aguirre**
+**Joseph Aguirre Moreira**
 
 ## 🎯 Actividad Integradora I
 
