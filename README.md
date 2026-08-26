@@ -149,4 +149,4 @@ Agregar aquí las capturas de pantalla de:
 - Sistema de favoritos.
 - SnackBar.
 - AlertDialog.
-- Aplicación ejecutándose en el emulador Android.
+
