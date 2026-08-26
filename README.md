@@ -12,7 +12,7 @@ La primera versión de la aplicación fue una aplicación básica en Flutter sob
 
 ---
 
-# 🏆 Actividad Integradora 2 – Desarrollo de una Aplicación Flutter con Navegación y Nuevos Widgets
+# 🏆 Actividad Integradora II – Desarrollo de una Aplicación Flutter con Navegación y Nuevos Widgets
 
 ## Descripción de la aplicación
 
