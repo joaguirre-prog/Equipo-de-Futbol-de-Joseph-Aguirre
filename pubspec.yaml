@@ -1,21 +1,31 @@
 name: equipo_futbol_joseph_aguirre
-description: Aplicación Flutter de un equipo de fútbol desarrollada por Joseph Aguirre.
-publish_to: "none"
+description: Aplicación Flutter del equipo de fútbol de Joseph Aguirre - Actividad Integradora 2.
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.8.0 <4.0.0"
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
-  google_fonts: ^6.3.0
+  url_launcher: ^6.3.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/logo.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+  min_sdk_android: 21
