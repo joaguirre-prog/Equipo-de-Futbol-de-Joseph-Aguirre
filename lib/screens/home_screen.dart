@@ -3,6 +3,7 @@ import '../widgets/team_logo.dart';
 import 'players_screen.dart';
 import 'squad_screen.dart';
 import 'info_screen.dart';
+import 'favorites_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -61,11 +62,23 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             SizedBox(
-              width: double.infinity,
-              child: ElevatedButton.icon(
-                onPressed: () => _go(context, const InfoScreen()),
-                icon: const Icon(Icons.info_outline),
-                label: const Text('Información del equipo'),
+  width: double.infinity,
+  child: ElevatedButton.icon(
+    onPressed: () => _go(context, const InfoScreen()),
+    icon: const Icon(Icons.info_outline),
+    label: const Text('Información del equipo'),
+  ),
+),
+const SizedBox(height: 10),
+SizedBox(
+  width: double.infinity,
+  child: ElevatedButton.icon(
+    onPressed: () => _go(context, const FavoritesScreen()),
+    icon: const Icon(Icons.favorite),
+    label: const Text('Mis favoritos'),
+  ),
+),
+
               ),
             ),
           ],

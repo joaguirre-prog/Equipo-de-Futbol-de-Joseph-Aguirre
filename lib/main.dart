@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
 import 'screens/home_screen.dart';
+import 'providers/favorites_provider.dart';
 
 void main() {
-  runApp(const FootballTeamApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => FavoritesProvider(),
+      child: const FootballTeamApp(),
+    ),
+  );
 }
 
 class FootballTeamApp extends StatelessWidget {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../data/players_data.dart';
+
+import '../models/player.dart';
 
 class PlayerCard extends StatelessWidget {
   final Player player;
@@ -13,17 +14,30 @@ class PlayerCard extends StatelessWidget {
     required this.onFavorite,
   });
 
+  String get initials {
+    final words = player.name.trim().split(' ');
+
+    if (words.length >= 2) {
+      return '${words[0][0]}${words[1][0]}'.toUpperCase();
+    }
+
+    return words[0][0].toUpperCase();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+      margin: const EdgeInsets.symmetric(
+        horizontal: 12,
+        vertical: 6,
+      ),
       child: ListTile(
         contentPadding: const EdgeInsets.all(10),
         leading: CircleAvatar(
           radius: 28,
           backgroundColor: const Color(0xFF0B6623),
           child: Text(
-            player.initials,
+            initials,
             style: const TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
@@ -32,13 +46,19 @@ class PlayerCard extends StatelessWidget {
         ),
         title: Text(
           player.name,
-          style: const TextStyle(fontWeight: FontWeight.bold),
+          style: const TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
         ),
-        subtitle: Text('${player.position} • Camiseta ${player.number}'),
+        subtitle: Text(
+          '${player.position} • Camiseta ${player.number}',
+        ),
         trailing: IconButton(
           tooltip: 'Favorito',
           icon: Icon(
-            favorite ? Icons.favorite : Icons.favorite_border,
+            favorite
+                ? Icons.favorite
+                : Icons.favorite_border,
             color: favorite ? Colors.red : Colors.grey,
           ),
           onPressed: onFavorite,
